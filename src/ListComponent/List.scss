@@ -1,0 +1,44 @@
+.wrapper {
+  margin: 40px;
+}
+
+.picture {
+  width: 200px;
+  height: 150px;
+}
+
+.list-container {
+  max-width: 1100px;
+  display: flex;
+  gap: 40px 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-title {
+  display: inline-block;
+}
+
+.item-description {
+  display: inline-block;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 970px) {
+
+    .list-container {
+      gap: 40px;
+    }
+
+    .item-description {
+      max-width: 250px;
+    }
+
+}

@@ -1,0 +1,46 @@
+.board-container {
+  max-width: 1100px;
+  display: flex;
+  gap: 40px 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.picture-board-item {
+  flex: 0 0 40%;
+  position: relative;
+}
+
+.picture-title {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+}
+
+.board-picture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.board-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 975px) {
+
+  .picture-board-item {
+    flex: none;
+    width: 200px;
+    height: 200px;
+    margin: 0 25px;
+  }
+
+}
